@@ -1,0 +1,501 @@
+\documentclass[16pt,openbib]{beamer}
+
+\author{Pritvi Jheengut @zcoldplayer} %\thanks{\and}}
+\title{A little stroll from Floss to Hacktoberfest}
+
+\subtitle{Importance of Licensing \\
+Hacking and Free Software \\
+Git!!!!!!!!  GitHub\\
+Hacktoberfest\\
+Digital Ocean\\
+}
+
+\subject{}
+
+\usepackage[size=custom,width=64,height=36,orientation=landscape,
+  scale=1.75]{beamerposter}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Eliminate errors such as
+% \LaTeX\ Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
+% \LaTeX\ Font Warning: Size substitutions with differences up to 1.0pt
+
+\usepackage{hyperref}
+\hypersetup{
+  pdfcreator=pdflatex,
+  pdffitwindow=true
+}
+
+\usepackage{verbatim}
+
+\usepackage[french,UKenglish]{babel}
+\usepackage{listings}
+
+% \usepackage{pgf}
+% \usepackage{xy}[all]
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows,positioning}
+
+\usepackage{smartdiagram}
+
+% \usepackage{booktabs}
+
+\mode<presentation>
+
+  \useoutertheme{infolines}
+
+  \definecolor{light}{HTML}{121B2F}
+  \definecolor{confblue}{HTML}{5D8EAF}
+  \definecolor{confred}{HTML}{7B1F7C}
+  \definecolor{confyellow}{HTML}{121B2F}
+  \definecolor{conftext}{HTML}{77AABB}
+
+  \setbeamercolor{alerted text}
+  {bg=confblue,fg=conftext}
+
+  \setbeamercolor{block title}
+  {bg=confred,fg=conftext}
+
+  \setbeamercolor{block body}
+  {bg=confblue,fg=-confyellow}
+
+  \setbeamercolor{frametitle}
+  {parent=confred,fg=-confyellow}
+
+  \setbeamercolor{normal text}
+  {bg=confred,fg=confblue}
+
+  \setbeamercolor*{palette primary}
+  {use=structure,fg=confblue,bg=structure.fg}
+
+  \setbeamercolor*{palette secondary}
+  {use=structure,fg=-confblue,bg=structure.fg!85!confblue}
+
+  \setbeamercolor*{palette tertiary}
+  {use=structure,fg=-confblue,bg=structure.fg!70!confblue}
+
+  \setbeamercolor{structure}
+  {bg=confyellow,fg=confblue}
+
+  \setbeamercolor{Title bar}
+  {fg=confred!90}
+
+  \setbeamercolor{titlelike}
+  {parent=confyellow,bg=structure.fg!30!-confyellow,fg=black!85}
+
+  \setbeamercovered{transparent,dynamic}
+
+  \setbeamersize{text margin left=8cm,text margin right=2cm}
+
+  \setbeamertemplate{blocks}[rounded][shadow=true]
+
+  \setbeamertemplate{background canvas}[vertical shading]
+  [top=confred,middle=confyellow,bottom=confyellow]
+
+
+% \mode<handout>{\beamertemplatesolidbackgroundcolor{black!50}}
+
+\mode<all>
+
+\begin{document}
+
+\date[Hacktoberfest BootCamp]{Hacktoberfest BootCamp - 21 September 2019}
+
+\frame{
+  \frametitle{}
+
+  \huge
+  \maketitle
+
+}
+
+\section{Intellectual Property Alert : Overview of the Copyleft
+  Licenses}
+
+\frame{
+  \frametitle{Copyleft License Attribution}
+
+  Made with love using beamer, \LaTeX\ and git.\\
+  You can view at \href{}{Hacktoberfest 2019}
+
+  \begin{alertblock}{This work is licensed under the \LaTeX\ Project
+      Public License.}
+    To view a copy of this license, visit \\
+    \url{https://www.latex-project.org/lppl.txt}
+  \end{alertblock}
+
+  \begin{alertblock}{This work is licensed under the Creative
+      Commons Attribution-ShareAlike 4.0 International License.}
+    To view a copy of this license, visit \\
+    \href{http://creativecommons.org/licenses/by-sa/4.0/}{CC BY-SA}
+    or \\
+
+    send a letter to \\
+    Creative Commons, \\
+    PO Box 1866, \\
+    Mountain View, \\
+    CA 94042, \\
+    USA. \\
+  \end{alertblock}
+
+}
+
+\section{Greetings}
+\subsection{About the Author}
+
+\frame{
+  \frametitle{Who Am I}
+
+  \large
+
+  \href{http://slackware.com/}{Geek@Slackware}
+
+  \href{https://twitter.com/zcoldplayer}{twitter @zcoldplayer}
+
+  \href{https://xmail.net/z.coldplayer}{zcoldplayer xmail Website}
+
+  \href{http://metservice.intnet.mu/}{Work
+    : SMTT@Meteorological.Services.mu}
+
+  Active in many User group LUGM, MMC, MSCC, FECM, GDG\_MU \\
+  and several other hackathons
+
+  Passionate about how and why things work.
+
+  Fervour Advocate of Free Libre and Open Source Software.
+
+}
+
+\subsection{About the Audience}
+
+\frame{
+  \frametitle{Who are you}
+
+  \large
+
+  \begin{block}{Would you mind tell me who you are?}
+    Some hints:
+  \end{block}
+
+  \begin{enumerate}
+  \item @twitter\_handle
+  \item where you work
+  \item email you want to share
+  \item Hobbies
+  \item purpose and expectations of this session
+  \end{enumerate}
+
+}
+
+\section{Community Groups in Mauritius}
+
+\frame{
+  \frametitle{Community Groups in Mauritius}
+
+  \begin{block}{Healthy growth of Community Groups in Mauritius}
+    This turn of the century has seen an uprising of Community groups
+    in Mauritius in the field of the Digital World. The diversity has
+    helped the exchange and sharing of innovative ideas, experience,
+    bleeding edge technology, upcoming events, conferences in the
+    Digital Island of the Republic of Mauritius.
+  \end{block}
+
+  This is a list of some of the active communities in Digital
+  Mauritius.
+
+  \begin{itemize}
+  \item Linux User Group Meta, LUGM
+  \item Mauritius Software Craftsmanship Community, MSCC
+  \item Mauritius Makers Community, MMC
+  \item Front-End Coders Mauritius, FECM
+  \item PHP User Group of Mauritius, phpMauritiusUG
+  \item Symfonymu
+  \item Google Developers Group Mauritius, GDG\_M
+  \item Digital Marketing Mauritius
+  \end{itemize}
+
+}
+
+\frame{
+  \frametitle{Dennis Ritchie}
+ 
+ \large 
+ 
+ Dennis MacAlistair Ritchie was an American computer scientist.
+ 
+ He created the C programming language and, with long-time 
+ colleague Ken Thompson,
+ 
+ the Unix operating system.
+ 
+ The 12th of october 2019 marks his 8th death anniversary. 
+ 
+ A little tribute to him.
+  }
+  
+\frame{
+  \frametitle{Questions}
+
+\huge Questions !!  
+  }
+  
+
+\frame{
+  \frametitle{About YOUR experience}
+
+  \Huge
+  
+  Have you ever participated in \#Hacktoberfest
+
+}  
+  
+\frame{
+  \frametitle{Do you License your creations?}
+
+  \Huge Do you License your creations ?
+  
+  What type of license do you usually use ?
+  
+  }
+  
+
+\frame{
+  \frametitle{Hacking and Free Software }
+  
+  \Huge Hacking and Free Software have always worked together since
+  the Dawn of computing
+  
+  Do you Hack ?
+  }
+  
+
+\frame{
+  \frametitle{Hacking and Free Software }
+  
+  \Huge 
+  
+  To hack means to be very good at something but the work to be done
+  is not necessarily a quality work.
+  
+  }
+  
+\frame{
+  \frametitle{Hacking and Free Software }
+  
+  \Huge 
+  
+  In essence, hacking is adding features to something which the 
+  original author never thought about.
+  
+  }
+  
+\frame{
+  \frametitle{Free Software }
+  
+  \Huge  Free Software has more emphasis upon end users
+  
+  Any change done to Free Software has to be published.
+
+  }
+  
+\frame{
+  \frametitle{Open Source Software }
+
+  \Huge Open Source Software  has more emphasis upon developers
+  }
+  
+\frame{
+  \frametitle{Linux and Linus Torvalds}
+  
+  \Huge
+  
+  What is Linux ??
+  
+  Linus Torvalds has released Linux under the GPL.  
+  
+  }
+  
+\frame{
+  \frametitle{Problems within the Linux Kernel}
+
+  \Huge Huge project with millions of lines of codes,
+  
+  Several thousands of developers send an increasing number
+  of patches per day
+  }
+  
+\frame{
+  \frametitle{Bitkeeper}
+
+  \Huge Initially, the patches were managed through email
+  
+  Later, Bitkeeper, a closed source versioning content system 
+  was used to manage the Linux Kernel patches.
+  
+  }
+  
+\frame{
+  \frametitle{Git!!!!!!!!! }
+
+  \Huge Being closed sourced became impracticable, a solution 
+  was needed. 
+  
+  In a few days, Linus Torvalds wrote git using C primarily.
+  
+  }
+  
+\frame{
+  \frametitle{GitHub - part 1}
+  
+  \huge
+  
+  \href{https://github.com}
+  {GitHub provides hosting for software development version control
+  using Git.}
+  
+  what are your favourite Free and Open Source project??
+  
+  }
+  
+\frame{
+  \frametitle{GitHub - part 2}
+  
+  \huge
+
+  Last year Github was acquired by and is now subsidiary a Microsoft
+  while offering all management functionality of Git as well as
+  adding its own features but they are neither Free nor Open Source
+  software but it is free of cost to use to a certain limit.
+  
+  }
+  
+\frame{
+  \frametitle{GitHub - part 3}
+  
+  \huge
+  
+  GitHub provides access control and several collaboration features 
+  such as bug tracking, feature requests, task management, and 
+  wikis for every project.
+  
+  }
+  
+\frame{
+  \frametitle{GitHub -- Be social}
+  
+  \Huge
+  
+  \href{https://help.github.com/en/articles/be-social}
+  {You can interact with people, repositories, and organizations on
+  GitHub. See what others are working on and who they're connecting 
+  with from your personal dashboard.}
+  
+  }
+  
+\frame{
+  \frametitle{Digital Ocean}
+  
+  \Huge
+  
+  \href{https://www.digitalocean.com/}
+  {Digital Ocean is a cloud computing service provider so developers
+  and their teams use to build software.}
+  
+  }
+  
+\frame{
+  \frametitle{what is Hacktoberfest}
+  
+  \Huge
+  
+  \href{https://hacktoberfest.digitalocean.com/}
+  {Hacktoberfest is an annual month-long event held in the month of
+  October organised by GitHub and Digital Ocean.}
+  
+  }
+  
+\frame{
+  \frametitle{Why Hacktoberfest}
+  
+  \Huge
+  
+  A marathon of coding, hacking festival is called a Hackathon.
+  
+  A month long of beer festival, Volksfest, is called Oktoberfest.
+  
+  }
+  
+\frame{
+  \frametitle{Hacktoberfest for coders, developers, hackers}
+  
+  \Huge
+  This is a month to celebrate and encourage developers to get
+  involved and contribute to open source projects.
+  
+  }
+  
+\frame{
+  \frametitle{How to Hacktoberfest}
+    
+  \Huge
+  
+  Since this festival is about Free and Open Source Software.
+  
+  Hacktoberfest is open to everyone in our global community.
+  
+  }
+  
+\frame{
+  \frametitle{How to Hacktoberfest}
+    
+  \Huge
+  
+  The next step is to submit four quality pull requests to public
+  GitHub repositories.
+  
+  }
+  
+\frame{
+  \frametitle{How to Hacktoberfest}
+    
+  \Huge
+  
+  \href{https://hacktoberfest.digitalocean.com/}
+  {Register at hacktoberfest.digitalocean.com anytime between
+  October 1 and October 31.}
+  
+  }
+  
+\frame{
+  \frametitle{How to Hacktoberfest}
+    
+  \Huge
+  
+  Work on issues with the label Hacktoberfest on GitHub projects and
+  when finished send the pull request.
+  
+  }
+  
+\frame{
+  \frametitle{Hacktoberfest Goodies}
+    
+  \Huge
+  
+  Upon completion of four pull requests, you will receive a 
+  Hacktoberfest t-shirt and stickers by November.
+  
+  }
+  
+  
+    
+\frame{
+  \frametitle{Questions}
+  \Huge Questions !!  
+  }
+  
+\end{document}
